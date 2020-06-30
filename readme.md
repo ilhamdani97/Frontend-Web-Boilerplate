@@ -94,12 +94,12 @@ PROJECT_FOLDER
 ```
 
 ## To Do
-- [] add watch task for Pug
-- [] add BrowserSync
-- [] add watch task for SCSS
-- [] use babelify and watchify for ES6 compilation (gulp)
-- [] add sourcemaps for JS
-- [] add sourcemaps for SCSS
+- [ ] add watch task for Pug
+- [ ] add BrowserSync
+- [ ] add watch task for SCSS
+- [ ] use babelify and watchify for ES6 compilation (gulp)
+- [ ] add sourcemaps for JS
+- [ ] add sourcemaps for SCSS
 - [ ] add tasks to handle image files
 - [ ] add gulp task to optimize pug build
 - [ ] make pug able to read environment for dynamic path
