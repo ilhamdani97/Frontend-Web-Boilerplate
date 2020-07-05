@@ -9,7 +9,7 @@
 
 ## How To
 * run `yarn install`
-* open terminal and run `gulp` or run `yarn serve`. This will compile Pug, SCSS and JS files to build folder and start the dev server.
+* open terminal and run `gulp` or run `yarn start`. This will compile Pug, SCSS and JS files to build folder and start the dev server.
 
 ## Folder structures
 ```

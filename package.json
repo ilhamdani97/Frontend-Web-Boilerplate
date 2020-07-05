@@ -4,20 +4,44 @@
   "description": "boilerplate-struktur-frontend-dev",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "boilerplate"
   ],
+  "jest" : {
+    "setupFiles": ["./setup-jest.js"]
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
   "author": "ilham ramadani",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "ansi-colors": "^4.1.1",
+    "autoprefixer": "^9.8.4",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.1",
+    "del": "^5.1.0",
+    "emitty": "^1.4.0",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "jest": "^26.1.0",
+    "node-sass": "^4.14.1",
+    "postcss-scss": "^2.1.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1"
   }
+  
 }
