@@ -94,10 +94,10 @@ PROJECT_FOLDER
 ```
 
 ## To Do
-- [ ] add watch task for Pug
-- [ ] add BrowserSync
-- [ ] add watch task for SCSS
-- [ ] use babelify and watchify for ES6 compilation (gulp)
+- [x] add watch task for Pug
+- [x] add BrowserSync
+- [x] add watch task for SCSS
+- [x] use babelify and watchify for ES6 compilation (gulp)
 - [ ] add sourcemaps for JS
 - [ ] add sourcemaps for SCSS
 - [ ] add tasks to handle image files
