@@ -1,0 +1,57 @@
+@import '../../base/mixins';
+
+
+.a-button {
+    @include border-radius(50px);
+    text-decoration: none;
+    padding: 20px 0px;
+    font-size: 16px;
+    min-width: 272px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    @include for-size(small){
+        width: 100%;
+        margin-top: 20px;
+        padding: 16px 0px;
+    }
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+    &.primary {
+        background-image: linear-gradient(113deg,#f14545 0,#c41432 50%);
+        color: color(white);
+        &:hover {
+            background-image: linear-gradient(113deg,#c41432 0,#c41432 50%);
+        }
+    }
+    &.secondary {
+        background-color: transparent;
+        color: color(primary, 100);
+        border: 1px solid color(primary, 100);
+        &:hover, &:hover i {
+            background-color: color(secondary, 100);
+            color: #fff;
+      
+            &.transparent-background {
+              &--white {
+                background-color: color(white);
+                border-color: color(white);
+                color: color(secondary, 40) !important;
+              }
+            }
+        }
+    }
+    &.inactive, &:disabled {
+        background-color: color(shades_of_gray, 40);
+        color: color(shades_of_gray, 60);
+        cursor: no-drop;
+    }
+    
+    &.inactive-secondary, &:disabled {
+        cursor: no-drop;
+        background-color: color(white);
+        color: color(shades_of_gray, 60);
+        border: 1px solid color(shades_of_gray, 60);
+    }
+}

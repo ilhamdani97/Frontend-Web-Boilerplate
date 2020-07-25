@@ -1,7 +1,13 @@
+/*
+name : NotFound
+auto create By : ilham
+auto create On : Tue, 10 July 2020
+*/
+
 import BaseClass from '../BaseClass';
 import { Popup } from '../components';
 
-export class __NAME__ extends BaseClass {
+export class NotFound extends BaseClass {
     constructor(){
         super();
     }
@@ -16,4 +22,4 @@ export class __NAME__ extends BaseClass {
 
 }
 
-export default new __NAME__()
+export default new NotFound()

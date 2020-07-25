@@ -10,8 +10,10 @@
   "keywords": [
     "boilerplate"
   ],
-  "jest" : {
-    "setupFiles": ["./setup-jest.js"]
+  "jest": {
+    "setupFiles": [
+      "./setup-jest.js"
+    ]
   },
   "dependencies": {
     "jquery": "^3.5.1"
@@ -43,5 +45,4 @@
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.11.1"
   }
-  
 }

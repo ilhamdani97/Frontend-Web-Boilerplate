@@ -18,17 +18,17 @@ PROJECT_FOLDER
 |
 ├-- src/
 |   ├-- images/
-|   ├-- html/
+|   ├-- pug/
 |   |   ├-- components/
-|   |   |   └-- *.html
+|   |   |   └-- *.pug
 |   |   ├-- config/
 |   |   ├-- pages/
-|   |   |   ├-- 404.html
-|   |   |   ├-- 403.html
-|   |   |   ├-- 500.html
-|   |   |   └-- *.html
+|   |   |   ├-- 404.pug
+|   |   |   ├-- 403.pug
+|   |   |   ├-- 500.pug
+|   |   |   └-- *.pug
 |   |   └-- templates/
-|   |       └-- *.html
+|   |       └-- *.pug
 |   ├-- scss/
 |   |   ├-- base/
 |   |   ├-- helper/

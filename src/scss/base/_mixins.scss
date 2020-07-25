@@ -1,0 +1,110 @@
+@import './function';
+
+@mixin for-size($size) {
+    @media screen and (max-width: screen($size)) {
+      @content;
+    }
+  }
+  
+@mixin for-size-min($size) {
+    @media screen and (min-width: screen($size)) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+
+@mixin opacity($alpa) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$alpha})";
+    opacity: $alpa/100;
+}
+
+@mixin transform($value...) {
+    // FIXME: use autoprefixer
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+    transform: $value;
+}
+
+@mixin  transform-origin($value...) {
+    // FIXME: use autoprefixer
+    -webkit-transform-origin: $value;
+    -moz-transform-origin: $value;
+    -ms-transform-origin: $value;
+    -o-transform-origin: $value;
+    transform-origin: $value;
+}
+
+@mixin transition($value...) {
+    // FIXME: use autoprefixer
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+  
+@mixin transition-delay($value...) {
+    // FIXME: use autoprefixer
+    -webkit-transition-delay: $value;
+    -moz-transition-delay: $value;
+    -o-transition-delay: $value;
+    transition-delay: $value;
+}
+  
+@mixin backdrop-filter($value...) {
+    // FIXME: use autoprefixer
+    -webkit-backdrop-filter: $value;
+    backdrop-filter: $value;
+}
+
+@mixin appearance($value...) {
+    // FIXME: use autoprefixer
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    appearance: $value;
+}
+  
+@mixin border-radius($radius) {
+    @if radius {
+        border-radius: $radius;
+    } @else {
+        border-radius: 5px;
+    }
+}
+
+@mixin colors-all-font {
+    color: color(black);
+    &.white {
+        color: color(white);
+    }
+    &.primary100 {
+        color: color(primary, 100);
+    }
+    &.primary80 {
+        color: color(primary, 80);
+    }
+    &.primary60 {
+        color: color(primary, 60);
+    }
+    &.primary40 {
+        color: color(primary, 40);
+    }
+    &.primary20 {
+        color: color(primary, 20);
+    }
+  
+    &.secondary100 {
+        color: color(secondary, 100);
+    }
+    &.secondary80 {
+        color: color(secondary, 80);
+    }
+}

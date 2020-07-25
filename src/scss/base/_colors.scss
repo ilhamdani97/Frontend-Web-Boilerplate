@@ -1,0 +1,35 @@
+$colors:(
+    // Primary
+    primary:(
+        100: #EB2629,
+        80: #F44336,
+        60: #EF5350,
+        40: #E57373,
+        20: #EF9A9A,
+    ),
+    // Secondary
+    secondary:(
+        100: #B71C1C,
+        80: #C62828,
+        60: #D32F2F,
+        40: #E53935,
+        20: #F44336
+    ),
+    //General
+    white: #fff,
+    black: #000,
+    transparent: transparent,
+    danger: #f31d1d,
+    success: #82d727,
+    pale-gray: #f1f5f8,
+    // shades
+    shades_of_gray: (
+        100: #303030,
+        80: #7C7C7C,
+        70: #6c6c6c,
+        60: #B0B0B0,
+        50: #d8d8d8,
+        40: #EFEFEF,
+        20: #f7f7f7,
+    ),
+)
